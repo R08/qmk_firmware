@@ -37,6 +37,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //-|-----------|---------------------------------------------------------------------------------------------------------------------------------|||-----------------------------
 
 
+#define WRD_LEFT LCTL(KC_LEFT)
+#define WRD_RIGHT LCTL(KC_RIGHT)
 
 
 [L_SYS] = LAYOUT_tkl_ansi(
@@ -44,13 +46,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_TRNS,    KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,              KC_TRNS,  KC_TRNS,  KC_TRNS,
 //-|-----------|---------------------------------------------------------------------------------------------------------------------------------|||-----------------------------
 //-|-----------|---------------------------------------------------------------------------------------------------------------------------------|||-----------------------------
-     KC_TRNS,    KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,    KC_TRNS,  KC_TRNS,  KC_TRNS,
+     KC_TRNS,    KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS,    KC_TRNS,  KC_TRNS,  KC_TRNS,
 //-|-----------|---------------------------------------------------------------------------------------------------------------------------------|||-----------------------------
-     KC_TRNS,    KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,    KC_TRNS,  KC_TRNS,  KC_TRNS,
+     KC_TRNS,    KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_HOME,  WRD_LEFT, WRD_RIGHT, KC_END,  KC_TRNS,  KC_TRNS,  KC_TRNS,    KC_TRNS,  KC_TRNS,  KC_TRNS,
 //-|-----------|---------------------------------------------------------------------------------------------------------------------------------|||-----------------------------
-     KC_TRNS,    HR_A,      HR_S,     HR_D,     HR_F,     KC_TRNS,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT, KC_TRNS,  KC_TRNS,            KC_TRNS,
+     KC_TRNS,    HR_A,      HR_S,     HR_D,     HR_F,     KC_TRNS,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT,  KC_TRNS, KC_TRNS,            KC_TRNS,
 //-|---------------------------------------------------------------------------------------------------------------------------------------------|||-----------------------------
-     KC_TRNS,               KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,            KC_TRNS,              KC_TRNS,
+     KC_TRNS,               KC_LCTL,  KC_LSFT,  KC_TRNS,  KC_TRNS,  LCTL(KC_B),  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,         KC_TRNS,              KC_TRNS,
 //-|-----------|---------------------------------------------------------------------------------------------------------------------------------|||-----------------------------
      KC_TRNS,    KC_TRNS,   KC_TRNS,                                KC_TRNS,                                KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,    KC_TRNS,  KC_TRNS,  KC_TRNS),
 //-|-----------|---------------------------------------------------------------------------------------------------------------------------------|||-----------------------------
